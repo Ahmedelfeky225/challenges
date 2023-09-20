@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+.layout{
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:(7,1fr);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+
+
+
+.layout .div1{
+    grid-area: 1 / 1 / 3 /3;
+        background-color: white;
+}
+
+.layout .div2{
+    grid-area: 1 / 3 / 3 / 4;
+        background-color: white;
+}
+.layout .div3{
+    grid-area: 1 / 4 / 7 / 5;
+        background-color: black;
+        color: white;
+}
+
+.layout .div4{
+    grid-area:  3 / 1 / 7 / 2;
+            background-color: white;
+}
+
+.layout .div5{
+    grid-area: 3 / 2 / 5 / 4;
+            background-color: black;
+            color: white;
+}
+
+.layout .div6{
+    background-color: white;
+    color: black;
+    grid-area: 5 / 2 / 7 / 4;
+
+}
+.layout .div7{
+ background-color: white;
+ grid-area: 7 / 1 / 8 / 2;
+}
+
+.layout .div8{
+    background-color: black;
+    color: white;
+    grid-area: 7 / 2 / 8 / 3;
+}
+
+.div9{
+    background-color: white;
+    grid-area: 7 / 3 / 8 / 4;
+}
+
+.div10{
+    background-color: white;
+    grid-area: 7 / 4 / 8 / 5;
+}
+
+
+h5{
+    opacity: 0.6;
+    margin-top: -10px;
+    font-size: smaller;
+}
+
+h3{ 
+    font-size: 16px;
+        font-weight: bold;
+}
+
+.p1{
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.s1{
+    font-size: small;
+    line-height: 1.5;
+}
+
+.layout div {
+    padding: 10px;
+    border-bottom: 3px solid orangered;
+    position: relative;
+    
+}
+
+.layout div ::after{
+    content: "''";
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    font-size: 30px;
+    color: #b3b3b3;
+    transform: rotate(13deg);
+    -webkit-transform: rotate(13deg);
+    -moz-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+}
